@@ -18,5 +18,16 @@ const theme = extendTheme({
       secondary: "#3A416F",
     },
   },
+  // components: {
+  //   Button: {
+  //     baseStyle: {},
+  //     variants: {
+  //       ghost: (props) => ({
+  //         fontFamily: "Lato",
+  //         fontSize: "xs",
+  //       }),
+  //     },
+  //   },
+  // },
 });
 export default theme;
