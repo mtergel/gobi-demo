@@ -1,4 +1,4 @@
-import { Button, Heading, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Layout from "../src/layout/Layout";
 
@@ -10,9 +10,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Heading>WINTER SPICE 2020</Heading>
-        <Text>Body Roboto</Text>
-        <Button>SHOP NOW</Button>
+        <Box
+          backgroundSize="cover"
+          backgroundRepeat="no-repeat"
+          backgroundPosition="center"
+          backgroundImage={[
+            "url(images/banner/homebanner_mobile.png)",
+            "url(images/banner/homebanner_mobile.png)",
+            "url(images/banner/homebanner.png)",
+          ]}
+          width="100%"
+          height={["754px", "769px", "822.97px"]}
+        ></Box>
       </Layout>
     </>
   );

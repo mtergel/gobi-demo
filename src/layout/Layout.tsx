@@ -6,7 +6,12 @@ const Layout: React.FC<{}> = ({ children }) => {
     <>
       <Box display="flex" height="100%" flexDir="column">
         <Header />
-        <Box as="main" flexGrow={1}>
+        {/* mt for top header */}
+        <Box
+          as="main"
+          flexGrow={1}
+          marginTop={["38px", "38px", "38px", "40px"]}
+        >
           {children}
         </Box>
       </Box>

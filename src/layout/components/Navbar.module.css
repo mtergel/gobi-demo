@@ -1,0 +1,29 @@
+.hoverableLink {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  letter-spacing: 0.15em;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+}
+.hoverableLink:not(last-child) {
+  margin-right: 40px;
+}
+.hoverableLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -8px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.hoverableLink:hover:after {
+  width: 100%;
+  left: 0;
+}

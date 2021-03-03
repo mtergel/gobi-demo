@@ -1,24 +1,12 @@
 import { Icon, IconProps } from "@chakra-ui/react";
 import React from "react";
 
-interface I18Props extends IconProps {
-  stroke?: string;
-  fontSize?: string;
-}
-
-const I18: React.FC<I18Props> = ({
-  stroke = "white",
-  fontSize = "lg",
+const I18: React.FC<IconProps> = ({
+  fontSize = ["lg", "lg", "lg", "xl"],
   ...rest
 }) => {
   return (
-    <Icon
-      viewBox="0 0 19 18"
-      color={stroke}
-      fill="none"
-      fontSize={fontSize}
-      {...rest}
-    >
+    <Icon viewBox="0 0 19 18" fill="none" fontSize={fontSize} {...rest}>
       <path
         stroke="currentColor"
         strokeWidth="0.8"
