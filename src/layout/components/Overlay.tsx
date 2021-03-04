@@ -11,7 +11,7 @@ import NextLink from "next/link";
 import styles from "./Overlay.module.css";
 import { useEffect, useState } from "react";
 import { RemoveScroll } from "react-remove-scroll";
-import { CloseIcon } from "@chakra-ui/icons";
+import { CloseIcon } from "../../assets/icons";
 
 interface OverlayProps {
   open: boolean;

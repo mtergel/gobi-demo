@@ -16,13 +16,19 @@ const theme = extendTheme({
     gobi: {
       primary: "#272727",
       secondary: "#E85757",
+      secondaryLight: "#F68A90",
       header: "#3A416F",
+      price: "rgba(166,44,13,1)",
     },
     background: {
       default: "#FFFFFF",
       paper: "#F5F7F6",
       input: "#F7F8FB",
-      // #F5F7F6 #F5F5FA #F5F5F9 #F7F8FB
+      inputDropdown: "#F5F5FA",
+    },
+    text: {
+      primary: "rgba(0,0,0,0.87)",
+      secondary: "rgba(0,0,0,0.74)",
     },
   },
   // components: {

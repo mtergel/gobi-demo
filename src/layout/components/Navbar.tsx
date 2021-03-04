@@ -36,7 +36,7 @@ const Navbar = () => {
 
   const Logo = useBreakpointValue({
     base: <LogoMobile fontSize="65px" />,
-    lg: <LogoDesktop fontSize="87px" />,
+    xl: <LogoDesktop fontSize="87px" />,
   });
 
   // hook for overlay
@@ -59,7 +59,7 @@ const Navbar = () => {
     <>
       <Box
         as="nav"
-        height={["50px", "50px", "50px", "88px"]}
+        height={["50px", "50px", "50px", "50px", "88px"]}
         filter="drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15))"
         transition="background .3s"
         flex="1 0 auto"
@@ -68,7 +68,7 @@ const Navbar = () => {
             ? "gobi.header"
             : "linear-gradient(180deg, rgba(0, 0, 0, 0.31) 21.88%, rgba(0, 0, 0, 0.12) 63.13%, rgba(0, 0, 0, 0) 87.88%)"
         }
-        top={["38px", "38px", "38px", "40px"]}
+        top={["38px", "38px", "38px", "38px", "40px"]}
       >
         <DarkMode>
           <Box
@@ -96,7 +96,13 @@ const Navbar = () => {
                   position="relative"
                 >
                   <NextLink href={i.link} passHref>
-                    <Link textDecor="none" className={styles.hoverableLink}>
+                    <Link
+                      textDecor="none"
+                      className={styles.hoverableLink}
+                      _after={{
+                        background: "gobi.secondaryLight",
+                      }}
+                    >
                       {i.text}
                     </Link>
                   </NextLink>
