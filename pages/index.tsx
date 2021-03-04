@@ -1,5 +1,7 @@
+import { Box, Container } from "@chakra-ui/react";
 import Head from "next/head";
 import Layout from "../src/layout/Layout";
+import AboutUs from "../src/pagecomponents/AboutUs";
 import Banner from "../src/pagecomponents/Banner/Banner";
 import FeaturedCollection from "../src/pagecomponents/FeaturedCollection";
 import {
@@ -19,6 +21,10 @@ export default function Home() {
         <FeaturedCollection />
         <WomenCollection />
         <MenCollection />
+        <Box>
+          <Container maxW="894px"></Container>
+        </Box>
+        <AboutUs />
       </Layout>
     </>
   );
