@@ -136,7 +136,14 @@ const Navbar = () => {
               justifyContent="center"
               zIndex={1}
             >
-              {Logo}
+              <Link
+                href="/"
+                _focus={{
+                  boxShadow: "none",
+                }}
+              >
+                {Logo}
+              </Link>
             </Box>
             <HStack spacing={0} zIndex={2}>
               <Box

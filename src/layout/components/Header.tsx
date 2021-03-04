@@ -48,6 +48,7 @@ const Header: React.FC<{}> = () => {
                 fontSize="inherit"
                 borderRadius="6rem"
                 _focus={{ boxShadow: "outline" }}
+                zIndex={2}
               >
                 <Box display="flex" alignItems="center" height="100%">
                   <I18Icon marginRight={3} />
@@ -65,6 +66,7 @@ const Header: React.FC<{}> = () => {
               display={["none", "none", "none", "flex"]}
               alignItems="center"
               justifyContent="center"
+              zIndex={1}
             >
               <HStack spacing={3.5} alignItems="center">
                 <Text>RETURNING AN ORDER?</Text>
@@ -80,11 +82,12 @@ const Header: React.FC<{}> = () => {
               listStyleType="none"
               fontFamily="Lato"
               spacing={2.5}
+              zIndex={2}
             >
-              <Box as="li">
+              <Box as="li" fontFamily="Roboto">
                 <ButtonLink href="#">SIGN IN</ButtonLink>
               </Box>
-              <Box as="li">
+              <Box as="li" fontFamily="Roboto">
                 <ButtonLink href="#">SIGN UP</ButtonLink>
               </Box>
             </HStack>
