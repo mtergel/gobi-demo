@@ -31,16 +31,36 @@ const theme = extendTheme({
       secondary: "rgba(0,0,0,0.74)",
     },
   },
-  // components: {
-  //   Button: {
-  //     baseStyle: {},
-  //     variants: {
-  //       ghost: (props) => ({
-  //         fontFamily: "Lato",
-  //         fontSize: "xs",
-  //       }),
-  //     },
-  //   },
-  // },
+  components: {
+    Button: {
+      baseStyle: {},
+      variants: {
+        gobiLarge: {
+          bg: "#272727",
+          color: "#FFFFFF",
+          py: "0.875rem",
+          px: "2.75rem",
+          fontFamily: "Roboto",
+          fontWeight: 500,
+          fontSize: 18,
+          borderRadius: 10,
+          height: 50,
+          letterSpacing: "1.28px",
+        },
+        gobi: {
+          bg: "#272727",
+          color: "#FFFFFF",
+          py: "14.5px",
+          px: "44.5px",
+          fontFamily: "Roboto",
+          fontWeight: 500,
+          fontSize: 14,
+          borderRadius: 10,
+          height: 50,
+          letterSpacing: "1.28px",
+        },
+      },
+    },
+  },
 });
 export default theme;

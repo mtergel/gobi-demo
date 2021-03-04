@@ -1,27 +1,24 @@
-import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Layout from "../src/layout/Layout";
+import Banner from "../src/pagecomponents/Banner/Banner";
+import FeaturedCollection from "../src/pagecomponents/FeaturedCollection";
+import {
+  WomenCollection,
+  MenCollection,
+} from "../src/pagecomponents/ImageCollection";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>GOBI CASHMERE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Box
-          backgroundSize="cover"
-          backgroundRepeat="no-repeat"
-          backgroundPosition="center"
-          backgroundImage={[
-            "url(images/banner/homebanner_mobile.png)",
-            "url(images/banner/homebanner_mobile.png)",
-            "url(images/banner/homebanner.png)",
-          ]}
-          width="100%"
-          height={["754px", "769px", "822.97px"]}
-        ></Box>
+        <Banner />
+        <FeaturedCollection />
+        <WomenCollection />
+        <MenCollection />
       </Layout>
     </>
   );

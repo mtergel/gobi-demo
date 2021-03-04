@@ -25,7 +25,7 @@ const HideOnScroll: React.FC<{}> = ({ children }) => {
 
 const Header: React.FC<{}> = () => {
   return (
-    <Box as="header" position="fixed" top={0} width="100%">
+    <Box as="header" position="fixed" top={0} width="100%" zIndex={99}>
       <Box position="relative" width="100%">
         <HideOnScroll>
           <Box
