@@ -4,6 +4,7 @@ import Layout from "../src/layout/Layout";
 import AboutUs from "../src/pagecomponents/AboutUs";
 import Banner from "../src/pagecomponents/Banner/Banner";
 import FeaturedCollection from "../src/pagecomponents/FeaturedCollection";
+import GiftCollection from "../src/pagecomponents/GiftCollection";
 import {
   WomenCollection,
   MenCollection,
@@ -22,7 +23,7 @@ export default function Home() {
         <WomenCollection />
         <MenCollection />
         <Box>
-          <Container maxW="894px"></Container>
+          <GiftCollection />
         </Box>
         <AboutUs />
       </Layout>

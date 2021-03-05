@@ -17,6 +17,8 @@ const Price: React.FC<PriceProps> = ({
         thousandSeparator={true}
         prefix={currencySymbol}
         displayType="text"
+        decimalScale={2}
+        fixedDecimalScale
         style={{
           backgroundColor: "transparent",
         }}
