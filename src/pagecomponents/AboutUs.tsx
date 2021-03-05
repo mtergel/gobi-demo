@@ -92,6 +92,7 @@ const AboutUs = () => {
           align={["center", "center", "center", "left"]}
           fontSize="12px"
           marginBottom={["20px", "20px", "20px", "50px"]}
+          maxW={["auto", "auto", "470px", "auto"]}
         >
           Aute et officia anim consectetur consequat velit minim irure Lorem ad.
           Officia nisi sunt est eiusmod occaecat excepteur velit reprehenderit
